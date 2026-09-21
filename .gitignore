@@ -1,0 +1,32 @@
+﻿# Compiled Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Build output
+target/
+build/
+out/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.project
+*.classpath
+.settings/
+
+# Maven
+.mvn/
+
+# Gradle
+.gradle/
+gradle-wrapper.jar
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

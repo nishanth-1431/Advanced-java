@@ -2,6 +2,18 @@
 
 This syllabus is based on the supplied Build Tools & Testing course outline. The timestamps are kept as video reference points, not as estimates of study time.
 
+
+## 🎬 Primary Reference
+
+<a href="https://youtu.be/q6z_UCBM5Ek?si=MEJxOh5OvBUOcfYb">
+  <img src="https://img.shields.io/badge/Watch%20on-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+</a>
+
+> 📺 **[Advanced Java Full Course — Telusko (Navin Reddy)](https://youtu.be/q6z_UCBM5Ek?si=MEJxOh5OvBUOcfYb)**
+>
+> This is the primary video I followed to learn maven.  
+> Every topic, folder, and note here maps directly to this course or my personal notes.
+
 ## 1. Maven fundamentals
 
 - [ ] Introduction to Maven — `13:32:51`

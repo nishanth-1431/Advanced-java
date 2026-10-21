@@ -1,46 +1,60 @@
 # Introduction to Maven
 
-## 1. Definition
+## What is Maven?
+Apache Maven is a build automation tool mainly used for Java projects. It helps manage dependencies, compile code, run tests, and package applications.
 
+Maven uses `pom.xml` (Project Object Model) to define project details, dependencies, plugins, and build settings.
 
+## Why use Maven?
+- **Build automation:** Compile, test, and package projects with commands.
+- **Dependency management:** Download and manage required libraries.
+- **Standard structure:** Keeps source code, resources, and tests organized.
+- **Consistent builds:** Lets developers use the same project configuration and commands.
 
-## 2. Why do we need Maven?
+## Common Maven commands
 
-Record the problems Maven helps solve:
-- Manual compilation and packaging steps
-- Managing external libraries
-- Keeping a consistent project structure
-- Repeating builds and tests reliably across machines
+```bash
+mvn compile
+mvn test
+mvn package
+```
 
-## 3. What does Maven do?
+- `mvn compile` — compiles the application source code.
+- `mvn test` — runs configured tests.
+- `mvn package` — packages the project, usually as a JAR or WAR.
 
-- Builds and packages Java projects
-- Resolves dependencies
-- Runs tests through plugins
-- Provides a standard project structure and build lifecycle
+## How Maven works
+1. Reads the `pom.xml`.
+2. Resolves required dependencies and plugins.
+3. Runs the requested build lifecycle phases.
+4. Compiles code, runs configured tests, and packages the application.
+5. Places generated output in the `target/` directory.
 
-## 4. Maven workflow
+## Important terms
 
+| Term | Meaning |
+|---|---|
+| POM | Maven project configuration file (`pom.xml`) |
+| Dependency | A library the project needs |
+| Repository | A place Maven stores or downloads artifacts |
+| Plugin | A tool that performs a build task |
+| Goal | A specific task provided by a plugin |
+| Lifecycle phase | A stage in the build process |
+| Artifact | A packaged output, such as a JAR or WAR |
 
-`Source code + pom.xml → Maven → compile → test → package → build artifact`
+## Maven vs JDK
+The **JDK** provides Java development tools, including the compiler (`javac`). **Maven** organizes the build process and can use those tools through plugins. Maven does not replace the JDK.
 
-## 5. Maven vs JDK
+## Quick practice
+Try these commands in a valid Maven project:
 
-Explain the difference between the Java Development Kit and Maven.
+```bash
+mvn compile
+mvn test
+mvn package
+```
 
-## 6. Practical activity
+Check the `target/` folder for generated files. Note that packaging an application does not automatically run its `main` method.
 
-Describe how I would compile and run a small Java program manually, then explain which steps Maven can automate.
-
-## 7. Review questions
-
-1. What is Maven?
-2. Why is it useful in a Java project?
-3. Is Maven a programming language or a build tool?
-4. What is the role of the JDK when using Maven?
-
-## Key takeaways
-
-- [ ] I can define Maven.
-- [ ] I can explain at least three benefits.
-- [ ] I can distinguish Maven from the JDK.
+## Key takeaway
+Maven makes Java projects easier to build and maintain by handling dependencies and coordinating compilation, testing, and packaging through a shared configuration.

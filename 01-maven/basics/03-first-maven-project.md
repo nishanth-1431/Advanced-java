@@ -1,5 +1,4 @@
 # Creating the First Maven Project
-
 ## 1. Goal
 
 Create a simple Java application using Maven and understand how Maven generates the project, compiles the code, runs tests, and packages the application.
